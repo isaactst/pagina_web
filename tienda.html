@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+</head>
+<body>
+    <style>
+        
+        
+        p{
+            color: #1d1c42;
+        }
+        body{
+            background-color: #ffefef;
+        }
+        p{
+            font-family: Verdana, sans-serif;
+
+        }
+        h1{
+            background-color: #f2a365;
+            padding: 15px;
+        }
+    
+    </style>
+    <h1><center>Tienda Online</center></h1>
+    <div style="background-color: #ff5100; width: 10%; height: 270vh; float: left;"></div>
+    <div style="background-color: #ff5100; width: 10%; height: 270vh; float: right;"></div>
+    <div style="margin: 0 10%; padding: 10px;">
+    
+        
+        <p id="Inicio"></p><h3>Inicio</h3><p></p>
+        <p>Esta es una tienda que vende comida, refrescos y postres es un establecimiento comercial donde 
+            los usuarios pueden adquirir una variedad de productos alimenticios, bebidas o postres
+            pueden saber precios y variedad de la tienda.</p>
+        
+           <h2>En esta tienda puedes encontrar:</h2>
+           <p>Comida preparada: Menús de restaurantes, comida rápida, y platos caseros.</p>
+
+            <p>Ingredientes: Verduras frescas, carnes, productos enlatados y condimentos.</p>
+            
+            <p>Bebidas: Desde refrescos y jugos hasta vinos y licores.</p>
+            
+            <p>Postres y snacks: Dulces, pasteles y bocadillos.</p>
+        <nav>
+            <ul>
+                <h4><li class="li"><a href="#Inicio">Inicio</a></li></h4>
+                <h4><li class="li"><a href="#Comida">Comida</a></li></h4>
+                <h4><li class="li"><a href="#Bebidas">Bebidas</a></li></h4>
+                <h4><li class="li"><a href="#Postres">Postres</a></li></h4>
+                <h4><li class="li"><a href="#Repartidores">Repartidores</a></li></h4>
+            </ul>
+        </nav>
+            <script>
+                function showSection(sectionId) {
+                    var sections = document.querySelectorAll('.menu-section');
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    document.getElementById(sectionId).classList.add('active');
+                }
+            </script>
+            <center><font color="orange" size="6">Menu de la tienda:</font></center>
+            <p id="Comida"></p><h3>Comida</h3><p></p>
+            <p>En este espacio de proporcionan algunos productos de mercancia de comida rapida y sus Precios
+                se pueden cocinar a su gusto.</p>
+            <button onclick="showSection('comida')">comida</button>
+        
+            <div id="comida" class="menu-section">
+                <table>
+                    <tbody><tr>
+                        <th>Comida</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Hamburguesa con papas</td>
+                        <td>$120.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hamburguesa sin papas</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Burrito</td>
+                        <td>$80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Carne</td>
+                        <td>$150.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tacos de barbacoa</td>
+                        <td>$90.00</td>
+                    </tr>
+                    <tr>
+                        <td>Quesadilla</td>
+                        <td>$70.00</td>
+                    </tr>
+                    <tr>
+                        <td>Enchiladas</td>
+                        <td>$110.00</td>
+                    </tr>
+                </tbody></table>
+                <img src="https://i0.wp.com/goula.lat/wp-content/uploads/2019/12/hamburguesa-beyond-meat-scaled-e1577396155298.jpg?fit=1600%2C1068&amp;ssl=1" width="250" height="200">
+            <img src="https://cdn-0.somosmamas.com.ar/wp-content/uploads/2020/07/Comidas-rapidas-y-faciles-de-hacer-en-casa-fajitas-2048x1392.jpg" width="250" height="200">
+            <img src="https://cdn.kiwilimon.com/articuloimagen/17418/17427.jpg" width="250" height="200">
+            <img src="https://cdn-pro.elsalvador.com/wp-content/uploads/2022/08/comida_rapida_gourmet_el_salvador_Chirpys_Tacos.jpg" width="250" height="200">
+            </div>
+            
+                
+            
+   
+      <p id="Bebidas"></p><h3>Bebidas</h3><p></p>
+      <p>En este espacio se muestran la gran variedad de bebidas con las que puedes compañar tu comida y sus precios</p>
+      <style>
+        .menu-section {
+            display: none;
+        }
+        .menu-section.active {
+            display: block;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ffffff;
+        }
+        th {
+            background-color: #f2a365;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color:  #ffffff;
+        }
+        tr:hover {
+            background-color: #ffffff;
+        }
+    </style>
+
+
+
+    <button onclick="showSection('bebidas')">Bebidas</button>
+    <div id="bebidas" class="menu-section">
+        <table>
+            <tbody><tr>
+                <th>bebida</th>
+                <th>Chica</th>
+                <th>Mediana</th>
+                <th>Grande</th>
+            </tr>
+            <tr>
+                <td>Agua fresca horchata, Jamaica y Limon</td>
+                <td>$15.00</td>
+                <td>$20.00</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>Coca cola</td>
+                <td>$20.00</td>
+                <td>$25.00</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>Sprite</td>
+                <td>$20.00</td>
+                <td>$25.00</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>Mundet</td>
+                <td>$20.00</td>
+                <td>$25.00</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>Cerveza</td>
+                <td>$25.00</td>
+                <td>$30.00</td>
+                <td>$45.00</td>
+            </tr>
+            <tr>
+                <td>Pepsi</td>
+                <td>$20.00</td>
+                <td>$25.00</td>
+                <td>$40.00</td>
+            </tr>
+        </tbody></table>
+        <img src="https://th.bing.com/th/id/OIP.aaYtkt6Bv-8pKED0EU7o6QHaHa?rs=1&amp;pid=ImgDetMain" width="250" height="200">
+<img src="https://assets.entrepreneur.com/content/3x2/2000/20190726161400-CocaColaBebida.jpeg" width="250" height="200">
+<img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750105533998L.jpg" width="250" height="200">
+<img src="https://th.bing.com/th/id/OIP.lqmfyDoo0FMisea5bnhAlgHaDL?rs=1&amp;pid=ImgDetMain" width="250" height="200">
+    </div>  
+
+
+
+<p id="Postres"></p><h3>Postres</h3><p></p>
+<p>Aqui podras degustar de postres o algun dulce que sea de tu agrado</p>
+<button onclick="showSection('postres')">Postres</button>
+<div id="postres" class="menu-section">
+    <table>
+        <thead>
+            <tr>
+                <th>Postre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+            <tbody><tr>
+                <td>Pastel de Chocolate</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Flan</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>Cheesecake</td>
+                <td>$60.00</td>
+            </tr>
+            <tr>
+                <td>Helado</td>
+                <td>$25.00</td>
+            </tr>
+            <tr>
+                <td>Brownie</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>Macarons</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>Tarta de Manzana</td>
+                <td>$45.00</td>
+            </tr>
+    </tbody></table>
+    <img src="https://th.bing.com/th/id/OIP.dzqdCOGB08ghO2JncBuUkgHaHa?rs=1&amp;pid=ImgDetMain" width="250" height="200">
+            <img src="https://th.bing.com/th/id/OIP.q4sfzGvMsHeUnbPxQSIpggHaET?rs=1&amp;pid=ImgDetMain" width="250" height="200">
+            <img src="https://content-cocina.lecturas.com/medio/2022/09/06/tarta-facil-fresa-pocos-ingredientes_8f381e89_1200x1200.jpg" width="250" height="200">
+            <img src="https://th.bing.com/th/id/OIP.VtyGyPcnJlX4d0qJulEoUAHaE7?rs=1&amp;pid=ImgDetMain" width="250" height="200">
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .repartidor {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .repartidor h2 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+    .repartidor p {
+        margin: 5px 0;
+    }
+</style>
+
+
+    <p id="Repartidores"></p><h3>Repartidores</h3><p></p>
+
+    <h2>Brandon Llamas</h2>
+    <p>Teléfono: 341-158-6612</p>
+
+
+    <h2>juan Refugio</h2>
+    <p>Teléfono: 555-5678</p>
+
+
+    <h2>Carlos García</h2>
+    <p>Teléfono: 555-8765</p>
+
+    <footer>
+        <p>© 2024 Página de comidas, bebidas y postres Aturo Isaac</p>
+    </footer>
+    
+
+    <h2><u>Otras paginas que pueden interesarte:</u> </h2>
+
+    <p>
+        <v></v></p><p><a href="https://www.kiwilimon.com/tips/tips-de-cocina/cocina-basica/20-recetas-de-comida-mexicana-faciles">https://www.kiwilimon.com/tips/tips-de-cocina/cocina-basica/20-recetas-de-comida-mexicana-faciles</a></p>
+          
+      <p></p>
+      
+    <p>
+        <v></v></p><p><a href="https://tipsparatuviaje.com/category/mexico/">https://tipsparatuviaje.com/category/mexico/</a></p>
+          
+      <p></p>
+      <p>
+        <v></v></p><p><a href="https://es.restaurantguru.com/delivery-Tuxpan-Jalisco-m9631">https://es.restaurantguru.com/delivery-Tuxpan-Jalisco-m9631</a></p>
+          
+      <p></p>
+      <style>
+        .boton {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+    <h2>Formulario de Registro</h2> <form method="post" action="procesar_formulario.php"> 
+        Nombre: <input type="text" name="nombre" required><br> 
+        Domicilio: <input type="text" name="domicilio"><br> 
+        Teléfono: <input type="text" name="telefono"><br>
+         Código Postal: <input type="text" name="codigo_postal"><br> 
+         Correo Electrónico: <input type="email" name="correo_electronico" required><br> 
+         Cantidad: <input type="number" name="cantidad"><br> 
+         Fecha: <input type="date" name="fecha"><br>
+          Tamaño: <input type="text" name="tamaño"><br> 
+          Precio: <input type="text" name="precio"><br>
+           <input type="submit" value="Enviar"> </form>
+           <p>
+    <a href="principal.html" class="boton">Volver a la pagina Principal</a>
+           </p>
+
+</div>
+</body>
+</html>
